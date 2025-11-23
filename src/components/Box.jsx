@@ -1,20 +1,14 @@
 
-const Box = ({ 
-    children,
-    display,
-    columns,
-    gap,
-    padding
- }) => {
+const Box = ({ children, display, columns, gap, padding }) => {
 
-    const style = `
+  const style = `
     ${display}
     ${columns}
     ${gap}
     ${padding}
-    `;
+  `;
 
-    return <div className={style}>{children}</div>
+  return <div className={style}>{children}</div>
 }
 
 export default Box;
